@@ -1,0 +1,5 @@
+node_modules
+.prettierrc
+README-template.md
+style-guid.md
+.vscode
