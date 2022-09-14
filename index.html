@@ -19,24 +19,13 @@
       rel="stylesheet"
     />
     <title>Mastercraft Bamboo Monitor</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body class="font-Commissioner">
-    <header>
+    <header class="relative">
       <section
-        class="h-72 bg-no-repeat bg-cover bg-center bg-mobile-hero realtive"
+        class="h-72 bg-no-repeat bg-cover bg-center bg-mobile-hero md:bg-desktop-hero md:h-[400px]"
       >
-        <nav class="p-6 flex justify-between">
+        <nav class="p-6 flex justify-between md:mx-36 md:pt-16">
           <!-- logo -->
           <figure>
             <img class="" src="/images/logo.svg" alt="image-hero" />
@@ -44,11 +33,11 @@
 
           <!-- Hamburger -->
           <div>
-            <figure>
+            <figure class="md:hidden">
               <img src="/images/icon-hamburger.svg" alt="hamburger" />
             </figure>
             <!-- options -->
-            <ul class="hidden">
+            <ul class="hidden md:flex md:space-x-5 text-white">
               <li><a href="#">About</a></li>
               <li><a href="#">Discover</a></li>
               <li><a href="#">Get Started</a></li>
@@ -57,175 +46,206 @@
         </nav>
       </section>
     </header>
-    <main class="container">
-      <!-- hero main card -->
-      <div
-        class="max-w-sm bg-white rounded-lg border border-gray-100 mx-6 absolute top-60 shadow-sm"
-      >
-        <!-- hero logo -->
-        <figure class="absolute left-[42%] -top-8">
-          <img src="/images/logo-mastercraft.svg" alt="" />
-        </figure>
-        <article class="text-center">
-          <h3 class="text-xl px-8 pt-14">
-            <strong>Mastercraft Bamboo Monitor Riser</strong>
-          </h3>
-          <p class="text-sm text-darkGray px-5 pt-5">
-            A beautiful & handcrafted monitor stand to reduce neck and eye
-            strain.
-          </p>
-        </article>
-        <!-- cta -->
-        <div class="flex justify-center space-x-2 pt-5 pb-8">
-          <button class="bg-moderateCyan text-white py-4 px-10 rounded-full">
-            <strong>Back this project</strong>
-          </button>
-          <figure>
-            <img src="/images/icon-bookmark.svg" alt="bookmark" />
+    <main class="flex justify-center">
+      <div class="absolute top-60 md:top-80 md:w-[800px]">
+        <!-- hero main card -->
+        <section
+          class="max-w-sm bg-white rounded-lg border border-gray-100 mx-6 shadow-md md:max-w-full"
+        >
+          <!-- hero logo -->
+          <figure class="absolute left-[42%] -top-8 md:left-[45%]">
+            <img src="/images/logo-mastercraft.svg" alt="masterCraft" />
           </figure>
+          <article class="text-center">
+            <h3 class="text-xl px-8 pt-14 md:text-3xl">
+              <strong>Mastercraft Bamboo Monitor Riser</strong>
+            </h3>
+            <p class="text-sm text-darkGray px-5 pt-5 md:text-xl">
+              A beautiful & handcrafted monitor stand to reduce neck and eye
+              strain.
+            </p>
+          </article>
+          <!-- cta -->
+          <div
+            class="flex justify-center space-x-2 pt-5 pb-8 md:justify-around md:py-10"
+          >
+            <button
+              class="bg-moderateCyan text-white py-4 px-10 rounded-full md:text-2xl"
+            >
+              Back this project
+            </button>
+            <figure>
+              <img src="/images/icon-bookmark.svg" alt="bookmark" />
+            </figure>
+          </div>
+        </section>
+        <!-- Counter card -->
+        <aside class="py-10">
+          <section
+            class="max-w-sm bg-white rounded-lg border border-gray-100 mx-6 shadow-md md:max-w-full"
+          >
+            <article class="text-center py-10">
+              <div class="md:flex md:justify-evenly">
+                <article class="py-5">
+                  <h3 class="text-2xl md:text-4xl"><strong>$89,914</strong></h3>
+
+                  <p class="text-darkGray pt-2">of $100,000 backed</p>
+                </article>
+                <!-- <hr class="w-1/4 mx-auto" /> -->
+                <article class="py-5 md:border-r-1">
+                  <h3 class="text-2xl md:text-4xl"><strong>5,007</strong></h3>
+                  <p class="text-darkGray pt-2">total backers</p>
+                </article>
+                <!-- <hr class="w-1/4 mx-auto" /> -->
+                <article class="py-5 md:border-r-1">
+                  <h3 class="text-2xl md:text-4xl"><strong> 56 </strong></h3>
+                  <p class="text-darkGray pt-2">days left</p>
+                </article>
+              </div>
+              <div class="py-5">
+                <div
+                  class="w-5/6 bg-gray-200 rounded-full h-2.5 dark:bg-gray-200 mx-auto"
+                >
+                  <div
+                    class="bg-moderateCyan h-2.5 rounded-full"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </aside>
+
+        <!-- About -->
+        <section
+          class="bg-white rounded-lg border border-gray-100 mx-6 shadow-md mb-16"
+        >
+          <article class="p-5 md:text-xl md:p-12">
+            <h1 class="text-xl pt-5 md:text-2xl">
+              <strong>About this project</strong>
+            </h1>
+            <article class="text-darkGray py-5 space-y-5">
+              <p>
+                The Mastercraft Bamboo Monitor Riser is a sturdy and stylish
+                platform that elevates your screen to a more comfortable viewing
+                height. Placing your monitor at eye level has the potential to
+                improve your posture and make you more comfortable while at
+                work, helping you stay focused on the task at hand.
+              </p>
+              <p>
+                Featuring artisan craftsmanship, the simplicity of design
+                creates extra desk space below your computer to allow notepads,
+                pens, and USB sticks to be stored under the stand.
+              </p>
+            </article>
+          </article>
+
+          <!-- Reward card -->
+          <section
+            class="bg-white rounded-lg border border-gray-200 mx-6 shadow-sm p-5 md:mx-10 md:px-10"
+          >
+            <article>
+              <div class="md:flex md:justify-between md:items-center">
+                <h2 class="pt-2 md:text-2xl"><strong>Bamboo Stand</strong></h2>
+                <h3 class="text-sm text-moderateCyan font-medium md:text-lg">
+                  Pledge $25 or more
+                </h3>
+              </div>
+              <p class="pt-5 text-darkGray text-sm md:text-lg">
+                You get an ergonomic stand made of natural bamboo. You've helped
+                us launch our promotional campaign, and you’ll be added to a
+                special Backer member list.
+              </p>
+              <div class="md:flex md:justify-between md:items-center">
+                <h2 class="py-5 flex items-center space-x-2">
+                  <strong class="text-4xl"> 101</strong>
+                  <p class="text-darkGray text-sm">left</p>
+                </h2>
+                <button
+                  class="bg-moderateCyan text-white py-3 px-6 rounded-full"
+                >
+                  Select Reward
+                </button>
+              </div>
+            </article>
+          </section>
+
+          <!-- reward card II -->
+          <section
+            class="mt-5 bg-white rounded-lg border border-gray-200 mx-6 shadow-sm p-5 md:mx-10 md:px-10"
+          >
+            <article>
+              <div class="md:flex md:justify-between md:items-center">
+                <h2 class="pt-2 md:text-2xl">
+                  <strong> Black Edition Stand</strong>
+                </h2>
+                <h3 class="text-sm text-moderateCyan font-medium md:text-lg">
+                  Pledge $75 or more
+                </h3>
+              </div>
+              <p class="pt-5 text-darkGray text-sm md:text-lg">
+                You get a Black Special Edition computer stand and a personal
+                thank you. You’ll be added to our Backer member list. Shipping
+                is included.
+              </p>
+              <div class="md:flex md:justify-between md:items-center">
+                <h2 class="py-5 flex items-center space-x-2">
+                  <strong class="text-4xl"> 64</strong>
+                  <p class="text-darkGray text-sm">left</p>
+                </h2>
+                <button
+                  class="bg-moderateCyan text-white py-3 px-6 rounded-full"
+                >
+                  Select Reward
+                </button>
+              </div>
+            </article>
+          </section>
+
+          <!-- reward card III -->
+          <section
+            class="mt-5 mb-10 bg-white rounded-lg border border-gray-200 mx-6 shadow-sm p-5 md:mx-10 md:px-10 opacity-50"
+          >
+            <article>
+              <div class="md:flex md:justify-between md:items-center">
+                <h2 class="pt-2 md:text-2xl">
+                  <strong> Mahogany Special Edition</strong>
+                </h2>
+                <h3 class="text-sm text-moderateCyan font-medium md:text-lg">
+                  Pledge $200 or more
+                </h3>
+              </div>
+
+              <p class="pt-5 text-darkGray text-sm md:text-lg">
+                You get two Special Edition Mahogany stands, a Backer T-Shirt,
+                and a personal thank you. You’ll be added to our Backer member
+                list. Shipping is included.
+              </p>
+              <div class="md:flex md:justify-between md:items-center">
+                <h2 class="py-5 flex items-center space-x-2">
+                  <strong class="text-4xl"> 0</strong>
+                  <p class="text-darkGray text-sm">left</p>
+                </h2>
+                <button
+                  class="bg-moderateCyan text-white py-3 px-6 rounded-full"
+                >
+                  Out of stock
+                </button>
+              </div>
+            </article>
+          </section>
+        </section>
+        <div
+          class="text-center text-sm text-slate-300 sm:text-center dark:text-gray-400 py-5"
+        >
+          © 2022 All Rights Reserved
+          <a
+            class="underline text-veryDarkCyan hover:text-white"
+            href="https://github.com/AhanafVai"
+            >Ahanaf</a
+          >.
         </div>
       </div>
-      <!-- Counter card -->
-      <aside class="py-5">
-        <div
-          class="max-w-sm bg-white rounded-lg border border-gray-100 mx-6 top-60 shadow-sm relative"
-        >
-          <article class="text-center">
-            <article class="py-5">
-              <h3 class="text-2xl"><strong>$89,914</strong></h3>
-
-              <p class="text-darkGray">of $100,000 backed</p>
-            </article>
-            <hr class="w-1/4 mx-auto" />
-            <article class="py-5">
-              <h3 class="text-2xl"><strong>5,007</strong></h3>
-              <p class="text-darkGray">total backers</p>
-            </article>
-            <hr class="w-1/4 mx-auto" />
-            <article class="py-5">
-              <h3 class="text-2xl"><strong> 56 </strong></h3>
-              <p class="text-darkGray">days left</p>
-            </article>
-            <div class="py-5">
-              <div
-                class="w-5/6 bg-gray-200 rounded-full h-2.5 dark:bg-gray-200 mx-auto"
-              >
-                <div
-                  class="bg-moderateCyan h-2.5 rounded-full"
-                  style="width: 80%"
-                ></div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </aside>
-      <!-- About -->
-      <section
-        class="max-w-sm bg-white rounded-lg border border-gray-100 mx-6 my-10 top-60 shadow-sm relative"
-      >
-        <article class="p-5">
-          <h1 class="text-xl pt-5"><strong>About this project</strong></h1>
-          <article class="text-darkGray">
-            <p class="pt-5 text-sm">
-              The Mastercraft Bamboo Monitor Riser is a sturdy and stylish
-              platform that elevates your screen to a more comfortable viewing
-              height. Placing your monitor at eye level has the potential to
-              improve your posture and make you more comfortable while at work,
-              helping you stay focused on the task at hand.
-            </p>
-            <p class="pt-5 text-sm">
-              Featuring artisan craftsmanship, the simplicity of design creates
-              extra desk space below your computer to allow notepads, pens, and
-              USB sticks to be stored under the stand.
-            </p>
-          </article>
-        </article>
-
-        <!-- Reward card -->
-        <div
-          class="bg-white rounded-lg border border-gray-200 mx-6 shadow-sm relative p-5"
-        >
-          <article>
-            <h2 class="pt-2"><strong>Bamboo Stand</strong></h2>
-            <h3 class="text-sm text-moderateCyan font-medium">
-              Pledge $25 or more
-            </h3>
-
-            <p class="pt-5 text-darkGray text-sm">
-              You get an ergonomic stand made of natural bamboo. You've helped
-              us launch our promotional campaign, and you’ll be added to a
-              special Backer member list.
-            </p>
-            <h2 class="py-5 flex items-center space-x-2">
-              <strong class="text-4xl"> 101</strong>
-              <p class="text-darkGray text-sm">left</p>
-            </h2>
-          </article>
-
-          <button class="bg-moderateCyan text-white py-3 px-6 rounded-full">
-            Select Reward
-          </button>
-        </div>
-        <!-- reward card II -->
-        <div
-          class="bg-white rounded-lg border border-gray-200 mx-6 shadow-sm relative p-5 mt-5"
-        >
-          <article>
-            <h2 class="pt-2"><strong> Black Edition Stand</strong></h2>
-            <h3 class="text-sm text-moderateCyan font-medium">
-              Pledge $75 or more
-            </h3>
-
-            <p class="pt-5 text-darkGray text-sm">
-              You get a Black Special Edition computer stand and a personal
-              thank you. You’ll be added to our Backer member list. Shipping is
-              included.
-            </p>
-            <h2 class="py-5 flex items-center space-x-2">
-              <strong class="text-4xl"> 64 </strong>
-              <p class="text-darkGray text-sm">left</p>
-            </h2>
-          </article>
-
-          <button class="bg-moderateCyan text-white py-3 px-6 rounded-full">
-            Select Reward
-          </button>
-        </div>
-        <!-- reward card III -->
-        <div
-          class="bg-white rounded-lg border border-gray-200 mx-6 shadow-sm relative p-5 mt-5 mb-10 opacity-50"
-        >
-          <article>
-            <h2 class="pt-2"><strong> Mahogany Special Edition</strong></h2>
-            <h3 class="text-sm text-moderateCyan font-medium">
-              Pledge $200 or more
-            </h3>
-
-            <p class="pt-5 text-darkGray text-sm">
-              You get two Special Edition Mahogany stands, a Backer T-Shirt, and
-              a personal thank you. You’ll be added to our Backer member list.
-              Shipping is included.
-            </p>
-            <h2 class="py-5 flex items-center space-x-2">
-              <strong class="text-4xl"> 0 </strong>
-              <p class="text-darkGray text-sm">left</p>
-            </h2>
-          </article>
-
-          <button class="bg-darkGray text-white py-3 px-6 rounded-full">
-            Out of Stock
-          </button>
-        </div>
-      </section>
-      <span
-        class="relative top-60 block text-sm text-slate-300 sm:text-center dark:text-gray-400"
-        >© 2022 All Rights Reserved
-        <a
-          class="underline text-veryDarkCyan hover:text-white"
-          href="https://github.com/AhanafVai"
-          >Ahanaf</a
-        >.
-      </span>
     </main>
   </body>
 </html>
