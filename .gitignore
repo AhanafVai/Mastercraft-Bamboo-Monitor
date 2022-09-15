@@ -2,3 +2,4 @@ node_modules
 .prettierrc
 README-template.md
 .vscode
+test.html 
