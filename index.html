@@ -31,7 +31,13 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5);
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8939950980392157) 0%,
+        rgba(145, 145, 145, 0.3693972179289027) 53%,
+        rgba(255, 255, 255, 0) 100%
+      );
       z-index: 2;
       cursor: pointer;
     }
@@ -59,7 +65,7 @@
             <img src="images/icon-hamburger.svg" alt="Hamburger" />
           </figure>
           <!-- Hamburger-off -->
-          <figure id="off" class="cursor-pointer hidden z-10 fixed right-6">
+          <figure id="off" class="z-10 cursor-pointer hidden fixed right-6">
             <img src="images/icon-close-menu.svg" alt="closed" />
           </figure>
 
