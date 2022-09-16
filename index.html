@@ -85,6 +85,27 @@
     </header>
 
     <main class="flex justify-center">
+      <!-- Thanks card -->
+      <div
+        id="thanksCard"
+        class="z-30 hidden text-center bg-white rounded-lg border border-gray-200 mx-6 shadow-sm p-5 my-5 md:w-2/5 md:mx-10 md:px-10 space-y-5"
+      >
+        <img class="mx-auto" src="/images/icon-check.svg" alt="done icon" />
+        <h2 class="md:text-2xl"><strong>Thanks for your support!</strong></h2>
+
+        <p>
+          Your pledge brings us one step closer to sharing Mastercraft Bamboo
+          Monitor Riser worldwide. You will get an email once our campaign is
+          completed.
+        </p>
+
+        <button
+          onclick="closeThanks()"
+          class="bg-moderateCyan text-white py-3 px-6 rounded-full active:bg-darkCyan focus:bg-darkCyan"
+        >
+          Got it!
+        </button>
+      </div>
       <!-- Modal -->
       <section
         id="modal"
@@ -101,10 +122,9 @@
             </p>
           </article>
         </article>
+
         <!-- modal container -->
-        <div id="modalContainer">
-          <!-- modal Reward card -->
-        </div>
+        <div id="modalContainer"></div>
       </section>
 
       <div class="absolute top-60 md:top-80 md:w-[800px]">
@@ -141,7 +161,8 @@
           </div>
         </section>
         <!-- Counter card -->
-        <aside class="py-10">
+
+        <aside id="counterContainer" class="py-10">
           <section
             class="max-w-sm bg-white rounded-lg border border-gray-100 mx-6 shadow-md md:max-w-full"
           >
@@ -223,7 +244,6 @@
                   <p class="text-darkGray text-sm">left</p>
                 </h2>
                 <button
-                  onclick="openModal()"
                   class="bg-moderateCyan text-white py-3 px-6 rounded-full active:bg-darkCyan focus:bg-darkCyan"
                 >
                   Select Reward
@@ -256,7 +276,6 @@
                   <p class="text-darkGray text-sm">left</p>
                 </h2>
                 <button
-                  onclick="openModal()"
                   class="bg-moderateCyan text-white py-3 px-6 rounded-full active:bg-darkCyan focus:bg-darkCyan"
                 >
                   Select Reward

@@ -41,6 +41,7 @@ const off = document.querySelector("#off");
 const menu = document.querySelector("#menu");
 const overlay = document.querySelector("#overlay");
 const modal = document.querySelector("#modal");
+const thanksCard = document.querySelector("#thanksCard");
 const modalContainer = document.querySelector("#modalContainer");
 
 // event listeners
@@ -63,19 +64,28 @@ const openModal = () => {
   modal.classList.toggle("hidden");
   overlay.classList.toggle("overlay");
 };
+const openThanksCard = () => {
+  modal.classList.toggle("hidden");
+  thanksCard.classList.toggle("hidden");
+};
 
 const overlayOff = () => {
   modal.classList.toggle("hidden");
   overlay.classList.toggle("overlay");
 };
 
+const closeThanks = () => {
+  thanksCard.classList.toggle("hidden");
+  overlay.classList.toggle("overlay");
+};
+
 // Modal
-pledgeInfos.forEach((pledgeInfo) => {
-  console.log(pledgeInfo);
+pledgeInfos.forEach((pledgeInfo, i) => {
   const modalDiv = document.createElement("div");
 
   modalDiv.innerHTML = `
  <section
+ 
       class="bg-white rounded-lg border border-gray-200 mx-6 shadow-sm p-5 my-5 md:mx-10 md:px-10"
           >
             <div class="px-2 flex items-center  space-x-2">
@@ -83,7 +93,7 @@ pledgeInfos.forEach((pledgeInfo) => {
                 onclick="getElementById('${pledgeInfo.id}').classList.toggle('hidden')"
                 name="modalOption"
                 type="radio"
-                
+                class='inputs'
               />
             <div class="md:flex md:justify-between md:items-center">
                 <h2 class="md:text-2xl"><strong>${pledgeInfo.title}</strong></h2>
@@ -100,15 +110,13 @@ pledgeInfos.forEach((pledgeInfo) => {
               <p class="text-center text-darkGray pt-10">Enter your pledge</p>
               <div class="py-5 flex justify-between items-center">
                 <input
-                  id="input"
                   type="text"
                   class="rounded-full w-2/5 py-3 px-6 border border-gray-400"
                   placeholder="$"
                   value ="$ ${pledgeInfo.value}"
                / >
-               
-              
                 <button
+                 onclick="openThanksCard()"
                   class="bg-moderateCyan text-white py-3 px-6 rounded-full active:bg-darkCyan focus:bg-darkCyan"
                 >
                   continue
